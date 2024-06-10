@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+        
+        
+            width:60vw;
+            display:grid;
+            grid-template-columns: 100px 100px 100px 100px;
+
+             grid-template-rows: 100px 100px 100px; 
+            grid-auto-rows:150px; 
+        gap:20px;
+
+
+        } 
+        .child{
+            
+border:1px solid;
+
+
+}
+
+.cd1{
+    grid-row-start:1;
+    grid-row-end:4;
+    background-color: blueviolet;
+    
+}
+
+.cd2{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: greenyellow;
+}
+.cd6{
+    grid-row-start:2;
+    grid-row-end:4;
+    grid-column-start: 4;
+    background-color: yellow;
+}
+.cd4{
+    background-color: red;
+}
+.cd5{
+    background-color: blue;
+}
+   
+ .cd3{
+    background-color: aqua;
+ }  
+  .cd7{
+    background-color: aquamarine;
+  } 
+   .cd8{
+    background-color: antiquewhite;
+   }
+   @media screen and (max-width:400px){
+    body{
+        background-color: red;
+    }
+
+   }
+
+   </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child cd1">1</div>
+        <div class="child cd2">2</div>
+        <div class="child cd3">3</div>
+        <div class="child cd4">4</div>
+        <div class="child cd5">5</div>
+        <div class="child cd6">6</div>
+        <div class="child cd7">7</div>
+        <div class="child cd8">8</div>
+        
+    </div>
+    </body>
+</html>
