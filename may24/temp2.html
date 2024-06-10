@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      main {
+        border: 1px solid black;
+        border: hidden;
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+      nav {
+        border: 1px solid black;
+        border: hidden;
+        width: 80vw;
+        height: 8vh;
+        display: flex;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        z-index: 1;
+      }
+      .fa-solid{
+        position: absolute;
+        top:30px;
+        left:2vw;
+      }
+      .p1 {
+        position: absolute;
+        left: 45%;
+        padding: 0px;
+        font-size: 3vmin;
+      }
+      .p2 {
+        position: absolute;
+        left: 96%;
+        font-size: 3vmin;
+      }
+      .one{
+        width:98vw;
+        display: flex;
+        justify-content: center;
+        column-gap: 12px;
+       position: absolute;
+       top:12vh; 
+       text-align: center;
+       font-size: 2vmin; 
+       font-family: sans-serif;
+      }
+      img{
+        height: 55vh;
+        width:19vw;
+      } 
+      .two{
+        width:98vw;
+        display: flex;
+        justify-content: center;
+        column-gap: 12px;
+       position: absolute;
+       top:92vh; 
+       text-align: center;
+       font-size: 2vmin;
+       font-family: sans-serif;
+      }
+      img{
+        height: 55vh;
+        width:19vw;
+      }    
+      .a1{
+        position: absolute; 
+        top:167vh;
+        left:45%;
+        display: flex;
+      }     
+      .a1 a{  
+        text-decoration: none;
+        margin: 10%;  
+        font-size: 2.3vmin;
+        color:black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .a1 a:hover{
+           width:30%;
+           background-color: rgb(144, 135, 135);   
+      }
+      .p4{
+        position:absolute;
+        top:177vh;
+        text-align: center;
+        font-size: 3vmin;
+      }
+      .person img{
+        position: absolute;
+        top:191vh;
+        left:26%;
+        height: 60vh;
+        width:45vw;
+      }
+      h4 {
+        position: absolute;
+        top:252vh;
+        left:45%;   
+        font-family: "Karma", sans-serif;
+        font-size: 2.6vmin;
+      }
+      .p5{
+        position: absolute;
+        top:260vh;
+        left:42%;   
+        font-size: 2vmin;
+      }
+      .p6{
+        position: absolute;
+        top:263vh;
+        left:11%;
+        right:11%;
+        font-size: 2vmin;
+        font-family:inherit;
+      }
+      .footer{
+        position: absolute;
+        top:285vh;
+        left:10%;
+        right:68%;
+      }
+      .footer1{
+        position: absolute;
+        top:285vh;
+        left:40%;
+        right:20%;
+      }
+      .footer1 img{
+        height:5vh;
+        width:5vw;
+        position: absolute;
+        left:0%;
+      }
+      .p9{
+           position: absolute;
+           left:14%;
+           top:45%;
+      }
+      .footer2{
+        position: absolute;
+        top:298vh;
+        left:40%;
+        right:20%;
+      }
+      .footer2 img{
+        height:5vh;
+        width:5vw;
+      }
+      .p10{
+           position: absolute;
+           left:14%;
+           bottom:-3%;
+      }
+    .p9:hover{
+      background-color: rgb(212, 213, 213);
+    }
+    .p10:hover{
+      background-color: rgb(212, 213, 213);
+    }
+    .pop{
+      position: absolute;
+      top:283vh;
+      left:70%;
+    }
+    @media screen and (min-width:320px) and (max-width:520px){
+    footer, .footer1, .footer2, .pop{
+      display: flex;
+      flex-direction: column;
+    }
+      
+    }
+  </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <i class="fa-solid fa-bars"></i>
+        <p class="p1">My Food</p>
+        <p class="p2">Mail</p>
+      </nav>
+      <section class="one">
+        <div class="pic">
+          <img id="c1" src="https://www.w3schools.com/w3images/sandwich.jpg">
+          <h3>The Perfect Sandwich, A <br> Real NYC Classic</h3>
+          <p>
+            Just some random text, lorem ipsum text<br> praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://www.w3schools.com/w3images/steak.jpg">
+          <h3>Let Me Tell You About <br>This Steak</h3>
+          <p>
+            Once again, some random text to lorem<br> lorem lorem lorem ipsum text praesent<br> tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://www.w3schools.com/w3images/cherries.jpg">
+          <h3>Cherries, interrupted</h3>
+          <p>
+            Lorem ipsum text praesent tincidunt<br> ipsum lipsum.<br><br>
+            What else?
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://www.w3schools.com/w3images/wine.jpg">
+          <h3>Once Again, Robust Wine<br> and Vegetable Pasta</h3>
+          <p>
+            Lorem ipsum text praesent tincidunt<br> ipsum lipsum.
+          </p>
+        </div>
+      </section>
+      <section class="two">
+        <div class="pic">
+          <img src="https://www.w3schools.com/w3images/popsicle.jpg">
+          <h3>All I Need Is a Popsicle</h3>
+          <p>
+            Lorem ipsum text praesent tincidunt<br> ipsum lipsum. 
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://www.w3schools.com/w3images/salmon.jpg">
+          <h3>Salmon For Your Skin</h3>
+          <p>
+            Once again, some random text to lorem<br> lorem lorem lorem ipsum text praesent<br> tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://www.w3schools.com/w3images/sandwich.jpg">
+          <h3>The Perfect Sandwich, A<br> Real Classic</h3>
+          <p>
+            Just some random text, lorem ipsum text<br> praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+        <div class="pic">
+          <img src="https://www.w3schools.com/w3images/croissant.jpg">
+          <h3>Le French</h3>
+          <p>
+            Lorem lorem lorem lorem ipsum text <br>praesent tincidunt ipsum lipsum.
+          </p>
+        </div>
+      </section>
+      <div class="a1">
+        <a href="#">&laquo;</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">&raquo;</a>
+      </div>
+      <p class="p4">About Me, The Food Man</p>
+    <div class="person">
+        <img src="https://www.w3schools.com/w3images/chef.jpg">
+        <h4>I am Who I Am!</h4>
+        <i class="p5">With Passion For Real, Good Food</i>
+        <p class="p6">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+      
+ 
+  <footer>
+    <div class="footer">
+      <strong>FOOTER</strong>
+      <p class="p7">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <p class="p8">Powered by <a href="w3schools.com">w3schools</a></p>
+    </div>
+    <div class="footer1">BLOG POSTS<br><br>
+      <img src="https://www.w3schools.com/w3images/workshop.jpg">
+      <p class="p9">Lorem <br>Sed mattis nunc</p>
+    </div>
+    <div class="footer2">   
+      <img src="https://www.w3schools.com/w3images/gondol.jpg">
+      <p class="p10">IPsum<br>Praes tinci sed</p>
+    </div>
+    <div class="pop"><br>
+      <div>POPULAR POSTS<br><br>
+      <div>
+      <span style="background-color: black;color:white">Travel </span>
+      <span style="background-color:rgb(125, 119, 119);color:white">NewYork</span>
+      <span style="background-color:rgb(125, 119, 119);color:white">Dinner</span>
+       <span style="background-color:rgb(125, 119, 119);color:white">Salmon </span>
+        <span  style="background-color:rgb(125, 119, 119);color:white">France</span>
+      </div><br>
+      <div>
+         <span  style="background-color:rgb(125, 119, 119);color:white">Drinks</span>
+         <span  style="background-color:rgb(125, 119, 119);color:white">Ideas</span>
+         <span  style="background-color:rgb(125, 119, 119);color:white"> Cuisine</span>
+         <span  style="background-color:rgb(125, 119, 119);color:white"> Chicken</span>
+         <span  style="background-color:rgb(125, 119, 119);color:white"> Dressing</span>
+        </div><br>
+        <div>
+         <span  style="background-color:rgb(125, 119, 119);color:white">Fried</span>
+         <span  style="background-color:rgb(125, 119, 119);color:white"> Fish </span>
+         <span  style="background-color:rgb(125, 119, 119);color:white">Duck</span>
+        </div>
+      </div>
+      </div>
+       </div>
+  </footer>
+</body>
+</html>
