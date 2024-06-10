@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@keyframes chaithu{
+    10%{
+background-color: azure;
+transform:translate(200px,200px) rotate(360deg);
+border-radius: 50%;
+
+    }
+
+30%{
+    background-color: rgb(39, 203, 102);
+    transform:translate(300px,300px) rotate(360deg);
+    background-image: radial-gradient(red,yellow,black);
+}
+
+60%{
+    background-color: rgb(19, 165, 165);
+    transform:translate(300px,300px) rotate(360deg);
+}
+
+100%{
+    background-color: rgb(126, 22, 45);
+    transform: rotate(360deg);
+}}
+
+        .cd{
+            height:100px;
+            width: 100px;
+            animation-name:chaithu;
+            animation-duration:1s;
+            animation-iteration-count: infinite;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cd"></div>
+</body>
+</html>
