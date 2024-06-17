@@ -1,78 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .parent{
-            
-            display:grid;
+        .parent {
+
+            display: grid;
             grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-            grid-template-rows:100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
             grid-auto-rows: 100px;
-            gap:20px;
+            gap: 20px;
         }
-        .child{
-            border:1px solid;
+
+        .child {
+            border: 1px solid;
         }
-        .cd1{
-            grid-column-start:1;
-           grid-column-end: 3;
-           background-image: linear-gradient(rgb(80, 101, 145),rgb(180, 85, 162),rgb(82, 82, 82));
+
+        .cd1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-image: linear-gradient(rgb(80, 101, 145), rgb(180, 85, 162), rgb(82, 82, 82));
 
         }
-        .cd2{
-            grid-column-start:3;
-           grid-column-end:6;
-           background-image: linear-gradient(rgb(93, 91, 91),rgb(188, 188, 188));
+
+        .cd2 {
+            grid-column-start: 3;
+            grid-column-end: 6;
+            background-image: linear-gradient(rgb(93, 91, 91), rgb(188, 188, 188));
 
         }
-        .cd3{
-            background-image:linear-gradient(orange,white,yellow);
+
+        .cd3 {
+            background-image: linear-gradient(orange, white, yellow);
         }
-        .cd4{
+
+        .cd4 {
             grid-row-start: 1;
             grid-row-end: 4;
             grid-column-start: 7;
-            background-image: linear-gradient(red,greenyellow);
+            background-image: linear-gradient(red, greenyellow);
         }
-        .cd5{
+
+        .cd5 {
             grid-row-start: 1;
             grid-row-end: 4;
             grid-column-start: 8;
-            grid-column-end:10;
-            background-image: linear-gradient(rgb(119, 2, 161),rgb(127, 129, 125));
-        
-        
+            grid-column-end: 10;
+            background-image: linear-gradient(rgb(119, 2, 161), rgb(127, 129, 125));
+
+
 
 
         }
-        .cd6{
-            grid-row-start:1;
-            grid-row-end:4;
+
+        .cd6 {
+            grid-row-start: 1;
+            grid-row-end: 4;
             grid-column-start: 10;
-            width:5vw;
-            background-image: linear-gradient(rgb(215, 92, 112),white,rgb(65, 63, 63));
+            width: 5vw;
+            background-image: linear-gradient(rgb(215, 92, 112), white, rgb(65, 63, 63));
         }
-        .cd7{
-            grid-row-start:2;
-            grid-row-end:4;
-            grid-column-start:1;
-            grid-column-end: 3;
-            background-image: linear-gradient(rgb(41, 41, 41),rgb(217, 255, 0),rgb(106, 177, 75));
-        }
-        .cd8{
+
+        .cd7 {
             grid-row-start: 2;
             grid-row-end: 4;
-            grid-column-start:3;
-            grid-column-end:7;
-            background-image: linear-gradient(rgb(12, 205, 226),white);
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-image: linear-gradient(rgb(41, 41, 41), rgb(217, 255, 0), rgb(106, 177, 75));
         }
 
-
-       </style>
+        .cd8 {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 7;
+            background-image: linear-gradient(rgb(12, 205, 226), white);
+        }
+    </style>
 </head>
+
 <body>
     <div3 class="parent">
         <div class="child cd1">1</div>
@@ -83,7 +92,6 @@
         <div class="child cd6">6</div>
         <div class="child cd7">7</div>
         <div class="child cd8">8</div>
-    
-
 </body>
+
 </html>

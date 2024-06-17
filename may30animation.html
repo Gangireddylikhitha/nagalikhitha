@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+        height: 100vh;
+        
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(#070707,#182c51);
+
+           
+
+        }
+
+        .cd1{
+            border:1px solid;
+            border-radius:50%;
+            background-color: whitesmoke;
+            height:290px;
+            width:290px;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            animation: 4.2s chaithu linear infinite alternate;
+            display: flex;
+            position: fixed;
+
+        }
+        .cd2{
+            
+            border-radius:50%;
+            background-color: #182c51;
+            height:300px;
+            width:300px;
+            background-image: linear-gradient(#080b0f,#070707,#182c51);
+           
+        }
+
+        /* .cd3{
+            border:1px solid;
+            border-radius:50%;
+            background-color: #e80d0d;
+            height:290px;
+            width:290px;
+            background-image: linear-gradient(#db380b,#dfd23a,#f30b0b);
+           
+
+        } */
+
+        @keyframes chaithu{
+            0%{ 
+                transform:translate(-30px,30px);
+
+            box-shadow: 40px 40px whitesmoke;
+            
+
+            }
+
+            50%{
+                filter: blur(10px);
+            }
+
+
+
+            100%{
+                transform: translate(30px,-30px) scale(0.9);
+            box-shadow: -40px -40px whitesmoke;
+                
+            
+            }
+
+           
+
+
+        }
+    </style>
+</head>
+<body>
+    <main>   
+         <div class="cd1">
+        <div class="cd2"></div>
+        </div>
+        <div class="cd3"></div>
+    </main>
+</body>
+</html>
